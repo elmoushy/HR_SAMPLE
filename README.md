@@ -2,25 +2,59 @@
 	<a href="https://frappe.io/hr">
 		<img src=".github/frappe-hr-logo.png" height="80px" width="80px" alt="Frappe HR Logo">
 	</a>
-	<h2>Frappe HR</h2>
+	<h2>Frappe HRMS - Docker Setup</h2>
 	<p align="center">
-		<p>Open Source, modern, and easy-to-use HR and Payroll Software</p>
+		<p>Open Source, modern, and easy-to-use HR and Payroll Software with Docker</p>
 	</p>
 
 [![CI](https://github.com/frappe/hrms/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/frappe/hrms/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/frappe/hrms/branch/develop/graph/badge.svg?token=0TwvyUg3I5)](https://codecov.io/gh/frappe/hrms)
 
-<a href="https://trendshift.io/repositories/10972" target="_blank"><img src="https://trendshift.io/api/badge/repositories/10972" alt="frappe%2Fhrms | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
 
 <div align="center">
 	<img src=".github/hrms-hero.png"/>
 </div>
 
+## 🚀 Quick Start with Docker
+
+```bash
+# Clone this repository
+git clone https://github.com/elmoushy/HR_SAMPLE.git
+cd HR_SAMPLE/docker
+
+# Start the application
+docker-compose up -d
+```
+
+**Wait 15-20 minutes** for initial setup, then access at: **http://localhost:8000**
+
+**Default Credentials:**
+- Username: `Administrator`
+- Password: `admin`
+
+## 📖 Complete Documentation
+
+For detailed setup instructions, troubleshooting, and configuration:
+- **[Docker Setup Guide](docker/README.md)** - Complete installation and usage guide
+
+## 🐳 Quick Docker Commands
+
+```bash
+docker logs docker-frappe-1 -f    # View logs
+docker ps                          # Check running containers  
+docker-compose down                # Stop application
+docker-compose down -v             # Reset everything
+```
+
+---
+
 <div align="center">
 	<a href="https://frappe.io/hr">Website</a>
 	-
 	<a href="https://docs.frappe.io/hr/introduction">Documentation</a>
+	-
+	<a href="docker/README.md">Docker Setup Guide</a>
 </div>
 
 ## Frappe HR
