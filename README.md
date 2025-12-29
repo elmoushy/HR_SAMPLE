@@ -42,7 +42,7 @@ For detailed setup instructions, troubleshooting, and configuration:
 
 ```bash
 docker logs docker-frappe-1 -f    # View logs
-docker ps                          # Check running containers  
+docker ps                          # Check running containers
 docker-compose down                # Stop application
 docker-compose down -v             # Reset everything
 ```
